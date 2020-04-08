@@ -1,8 +1,12 @@
  package fr.unilim.iut.spaceinvaders;
-  
-    public class SpaceInvaders {
 
-	    int longueur;
+import fr.unilim.iut.spaceinvaders.utils.HorsEspaceJeuException;
+
+public class SpaceInvaders {
+
+	    private static final char MARQUE_FIN_LIGNE = '\n';
+		private static final char MARQUE_VAISSEAU = 'V';
+		int longueur;
 	    int hauteur;
 	    Vaisseau vaisseau;
 
@@ -13,21 +17,50 @@
 	    
 		@Override
 		public String toString() {
+			return recupererEspaceJeuDansChaineASCII();
+		}
+
+		public String recupererEspaceJeuDansChaineASCII() {
 			StringBuilder espaceDeJeu = new StringBuilder();
 			for (int y = 0; y < hauteur; y++) {
 				for (int x = 0; x < longueur; x++) {
-					if (this.vaisseau!=null && this.vaisseau.occupeLaPosition(x, y))
-						espaceDeJeu.append('V');
-					else
-						espaceDeJeu.append('.');
+					espaceDeJeu.append(recupererMarqueDeLaPosition(x, y));
 				}
-				espaceDeJeu.append('\n');
+				espaceDeJeu.append(MARQUE_FIN_LIGNE);
 			}
 			return espaceDeJeu.toString();
 		}
 
-	    public void positionnerUnNouveauVaisseau(int x, int y) {
-	         this.vaisseau = new Vaisseau (x,y);
+		private char recupererMarqueDeLaPosition(int x, int y) {
+			char marque;
+			if (this.aUnVaisseauQuiOccupeLaPosition(x, y))
+			      marque=MARQUE_VAISSEAU;
+			else
+			      marque='.';
+			return marque;
+		}
+
+		private boolean aUnVaisseauQuiOccupeLaPosition(int x, int y) {
+			return this.aUnVaisseau() && this.vaisseau.occupeLaPosition(x, y);
+		}
+
+		private boolean aUnVaisseau() {
+			return this.vaisseau!=null;
+		}
+		
+		
+
+		public void positionnerUnNouveauVaisseau(int x, int y) {
+			
+			if (  !estDansEspaceJeu(x, y) )
+				throw new HorsEspaceJeuException("La position du vaisseau est en dehors de l'espace jeu");
+		
+			vaisseau = new Vaisseau(x, y); 
+
+		}
+
+		private boolean estDansEspaceJeu(int x, int y) {
+			return ((x >= 0) && (x < longueur)) && ((y >= 0) && (y < hauteur));
 		}
     }
 
