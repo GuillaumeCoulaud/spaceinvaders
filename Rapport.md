@@ -22,7 +22,7 @@ Le coin supérieur gauche de l’espace jeu (point en haut à gauche) a pour coo
 Le vaisseau est positionné aux coordonnées transmises  
 Un nouveau vaisseau est créé
 La taille du vaisseau est réduite pour l'instant à son minimum (1 seul point)    
-
+ 
 - Story n°3 : Déplacer le vaisseau vers la droite dans l'espace de jeu  
 Le vaisseau se déplace d'un pas vers la droite 
 Si le vaisseau se trouve sur la bordure droite de l'espace de jeu, le vaisseau doit rester immobile (aucun déplacement, aucune exception levée : le vaisseau reste juste à sa position actuelle).
