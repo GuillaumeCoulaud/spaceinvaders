@@ -38,7 +38,7 @@ Aucune
 
 ### Diagramme de classes 
 
-![Diagrammes de classes de la semaine 1](images/DiagrammeClasses_Semaine1.png)
+![Diagrammes de classes de la semaine 1](https://github.com/GuillaumeCoulaud/image/blob/master/Diagramclasssemaine1.png)
 
 ### Nuage de mots du projet spaceinvaders (séance n°1)  
 (généré à l’aide de Source Code Word Cloud Generator avec la liste JavaBlacklist.txt fournie en annexe)
