@@ -55,6 +55,10 @@ Pour la  story 2 , j'avais placé  les classes Vaisseau et SpaceInvaders dans te
 
 -------------
 
+#### Fonctionnalité n°2: Dimensionner le vaisseau
+
+Dans cette storie nous devons donner une dimension au vaisseau. Ce qui n'était pas le cas jusque la. Pour ce faire nous devons écrire une nouveau test  postionner un nouveau vaisseau de dimension (3,2) à la position (7,9) afin de visualier une étape d'assertion similaire 
+
 
 ## Glossaire <a id="glossaire"></a>
 
