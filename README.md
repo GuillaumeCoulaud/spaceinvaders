@@ -59,7 +59,8 @@ Pour la  story 2 , j'avais placé  les classes Vaisseau et SpaceInvaders dans te
 
 Dans cette storie nous devons donner une dimension au vaisseau. Ce qui n'était pas le cas jusque la. Pour ce faire nous devons écrire une nouveau test  postionner un nouveau vaisseau de dimension (3,2) à la position (7,9) afin de visualier une étape d'assertion similaire 
 
-
+Histoire 2 : Faire en sorte qu'il soit impossible de positionner un nouveau vaisseau qui déborde de l'espace de jeu
+Désormais, nous voulons lever une exception si pour une une position (x,y) donnée, un vaisseau déborde de l'espace de jeu (c-a-d en sort partiellement). Le comportement à tester étant différent, il semblerait judicieux d'écrire une nouvelle méthode de test afin de montrer cette nouvelle intention.
 
 ###difficultées recontrées:
 Je ne savais pas quoi mettre dans les méthodes abscisseLaPlusAGauche et abscisseLaPlusADroite ce qui m'a bloqué pendant pas mal de temps.
