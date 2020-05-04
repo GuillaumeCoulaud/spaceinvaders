@@ -62,6 +62,12 @@ Dans cette storie nous devons donner une dimension au vaisseau. Ce qui n'était 
 Histoire 2 : Faire en sorte qu'il soit impossible de positionner un nouveau vaisseau qui déborde de l'espace de jeu
 Désormais, nous voulons lever une exception si pour une une position (x,y) donnée, un vaisseau déborde de l'espace de jeu (c-a-d en sort partiellement). Le comportement à tester étant différent, il semblerait judicieux d'écrire une nouvelle méthode de test afin de montrer cette nouvelle intention.
 
+Histoire 3:Déplacer un vaisseau vers la droite en tenant compte de sa dimension
+Deux cas de tests peuvent être envisagés pour tester le déplacement du vaisseau vers la droite en tenant compte de sa dimension :
+
+le cas normal où le vaisseau effectue son déplacement en restant dans l'espace de jeu.
+le cas limite où le vaisseau, étant déjà sur la bordure droite de l'espace jeu, ne peut pas se déplacer sous peine de déborder de l'espace jeu.
+
 ###difficultées recontrées:
 Je ne savais pas quoi mettre dans les méthodes abscisseLaPlusAGauche et abscisseLaPlusADroite ce qui m'a bloqué pendant pas mal de temps.
 
