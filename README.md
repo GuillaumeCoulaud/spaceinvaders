@@ -60,6 +60,10 @@ Pour la  story 2 , j'avais placé  les classes Vaisseau et SpaceInvaders dans te
 Dans cette storie nous devons donner une dimension au vaisseau. Ce qui n'était pas le cas jusque la. Pour ce faire nous devons écrire une nouveau test  postionner un nouveau vaisseau de dimension (3,2) à la position (7,9) afin de visualier une étape d'assertion similaire 
 
 
+
+###difficultées recontrées:
+Je ne savais pas quoi mettre dans les méthodes abscisseLaPlusAGauche et abscisseLaPlusADroite ce qui m'a bloqué pendant pas mal de temps.
+
 ## Glossaire <a id="glossaire"></a>
 
 * **Vaisseau** :  véhicule commandé par le joueur, pouvant se déplacer de droite à gauche et ayant la possibilité de lancer des missiles destinés à détruire le(s) envahisseurs.
