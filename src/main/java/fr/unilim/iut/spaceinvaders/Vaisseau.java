@@ -59,14 +59,16 @@ public class Vaisseau {
 	    this.y = y;
     }
 
+	
 	public int abscisseLaPlusAGauche() {
 		
-		return this.abscisse() + this.longueur - 1;
+		
+		return this.abscisse();
 		}
 
 	public int abscisseLaPlusADroite() {
 		
-		return this.abscisse();
+		return this.abscisse() + this.longueur - 1;
 	}
 
 	
