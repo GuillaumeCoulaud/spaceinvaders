@@ -3,11 +3,12 @@
 Pour le module M2104, nous réalisons un projet qui consiste à reproduire le jeu Spaceinvaders.
 
 
-- [Semaine n°1 : du xx au xx avril](#semaine1) 
-- [Semaine n°2 : du xx au xx avril](#semaine2)  
-- [Semaine n°3 : du xx au xx avril](#semaine3)   
+- [Semaine n°1 : du 30 mars au 04 avril](#semaine1) 
+- [Semaine n°2 : du 07 au 12 avril](#semaine2)  
+- [Semaine n°3 : du 15 au 20 avril](#semaine3)  
+- [Semaine n°4 : du 11 au 16 mai](#semaine4)
 - [Glossaire](#glossaire)
-## Semaine n°1 : du xx au xx avril <a id="semaine1"></a>
+## Semaine n°1 : du 30 mars au 04 avril <a id="semaine1"></a>
 
 ### Sprints et fonctionnalités réalisées 
 
@@ -56,7 +57,7 @@ Pour la  story 2 , j'avais placé  les classes Vaisseau et SpaceInvaders dans te
  Pour pouvoir, mettre en place les tests, il a été nécessaire d’ajouter une fonctionnalité supplémentaire qui permet de représenter l’espace de jeu dans une chaîne ASCII.
 
 -------------
-## Semaine n°2 : du xx au xx avril <a id="semaine2"></a>
+## Semaine n°2 : du 07 au 12 avril <a id="semaine2"></a>
 #### Fonctionnalité n°2: Dimensionner le vaisseau
 
 Dans cette storie nous devons donner une dimension au vaisseau. Ce qui n'était pas le cas jusque la. Pour ce faire nous devons écrire une nouveau test  postionner un nouveau vaisseau de dimension (3,2) à la position (7,9) afin de visualier une étape d'assertion similaire 
@@ -73,7 +74,7 @@ le cas limite où le vaisseau, étant déjà sur la bordure droite de l'espace j
 ###difficultées recontrées:
 Je ne savais pas quoi mettre dans les méthodes abscisseLaPlusAGauche et abscisseLaPlusADroite ce qui m'a bloqué pendant pas mal de temps.
 
-## Semaine n°3 : du xx au xx avril <a id="semaine3"></a>
+## Semaine n°3 : du 15 au 20 avril <a id="semaine3"></a>
 
 Histoire 4 : Déplacer un vaisseau vers la gauche en tenant compte de sa dimension:
 Exemple n°1 : le vaisseau se déplace normalement vers la gauche avec par exemple dans un espace de dimensions (15, 10) un vaisseau de dimensions (3,2) positionné en (7,9) qui se retrouve à la position (6,9) après un déplacement vers la gauche.
@@ -81,6 +82,13 @@ Exemple n°1 : le vaisseau se déplace normalement vers la gauche avec par exemp
 Exemple n°2 : le vaisseau reste immobile s'il est déjà sur la bordure gauche de l'espace de jeu avec par exemple dans un espace de dimensions (15, 10) un vaisseau de dimensions (3,2) positionné en (0,9) reste à la position (0,9) après un déplacement vers la gauche.
 #### Fonctionnalité en cours d'implémentation : 
  Fonctionnalité n°3:Choisir la vitesse du vaisseau
+ 
+ ## Semaine n°4 : du 11 au 16 mai <a id="semaine4"></a>
+	 Fonctionnalité n°3:Choisir la vitesse du vaisseau
+	 	story 1 :Déplacement vers la droite pour une vitesse quelconque
+	 	Prenons l'exemple d'un déplacement normal vers la droite d'un vaisseau qui irait à une vitesse de 3, et qui après son déplacement se trouverait toujours dans l'espace de jeu.
+
+![Diagrammes de classes de la semaine 1](https://github.com/GuillaumeCoulaud/image/blob/master/semaine4.png)
 
 ## Glossaire <a id="glossaire"></a>
 
