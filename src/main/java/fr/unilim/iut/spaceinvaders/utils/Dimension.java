@@ -1,5 +1,7 @@
 package fr.unilim.iut.spaceinvaders.utils;
 
+import fr.unilim.iut.spaceinvaders.Vaisseau;
+
 public class Dimension {
 	int longueur;
 	int hauteur;
@@ -9,7 +11,7 @@ public class Dimension {
 		this.hauteur = hauteur;
 	}
 
-	public int longueur() {
+	public  int longueur() {
 		return this.longueur;
 	}
 

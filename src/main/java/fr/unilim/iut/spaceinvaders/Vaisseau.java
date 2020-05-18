@@ -68,4 +68,10 @@ public class Vaisseau {
 	   this.origine.changerOrdonnee(y);
    }
 
+public int longueur() {
+	
+	return dimension.longueur();
+}
+
+ 
 }
