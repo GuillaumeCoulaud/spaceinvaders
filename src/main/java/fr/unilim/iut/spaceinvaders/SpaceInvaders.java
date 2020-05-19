@@ -1,5 +1,6 @@
  package fr.unilim.iut.spaceinvaders;
 
+import fr.unilim.iut.spaceinvaders.utils.Constante;
 import fr.unilim.iut.spaceinvaders.utils.DebordementEspaceJeuException;
 import fr.unilim.iut.spaceinvaders.utils.Dimension;
 import fr.unilim.iut.spaceinvaders.utils.HorsEspaceJeuException;
@@ -71,9 +72,11 @@ public class SpaceInvaders {
 		}
 
 		public void deplacerVaisseauVersLaGauche() {
-			 if (vaisseau.abscisseLaPlusAGauche()> (1)) vaisseau.seDeplacerVersLaGauche();
-			
-			
+			if (0 < vaisseau.abscisseLaPlusAGauche())
+				vaisseau.seDeplacerVersLaGauche();
+			if (!estDansEspaceJeu(vaisseau.abscisseLaPlusAGauche(), vaisseau.ordonneeLaPlusHaute())) {
+				vaisseau.positionner(0, vaisseau.ordonneeLaPlusHaute());
+			}
 		}
 		
 		public void positionnerUnNouveauVaisseau(Dimension dimension, Position position, int vitesse) {
@@ -96,7 +99,11 @@ public class SpaceInvaders {
 		}
 		
 		
-		
+		public void initialiserJeu() {
+			Position positionVaisseau = new Position(this.longueur/2,this.hauteur-1);
+			Dimension dimensionVaisseau = new Dimension(Constante.VAISSEAU_LONGUEUR, Constante.VAISSEAU_HAUTEUR);
+			positionnerUnNouveauVaisseau(dimensionVaisseau, positionVaisseau, Constante.VAISSEAU_VITESSE);
+		 }
     }
 
    
