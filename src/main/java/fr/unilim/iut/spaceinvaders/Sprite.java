@@ -3,7 +3,14 @@ package fr.unilim.iut.spaceinvaders;
 import fr.unilim.iut.spaceinvaders.utils.Dimension;
 import fr.unilim.iut.spaceinvaders.utils.Position;
 
-public class Sprite {
+public abstract class Sprite {
+
+	public Sprite(Dimension dimension, Position origine, int vitesse) {
+		super();
+		this.dimension = dimension;
+		this.origine = origine;
+		this.vitesse = vitesse;
+	}
 
 	protected Position origine;
 	protected Dimension dimension;
