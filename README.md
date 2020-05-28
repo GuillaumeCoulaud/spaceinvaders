@@ -7,6 +7,7 @@ Pour le module M2104, nous réalisons un projet qui consiste à reproduire le je
 - [Semaine n°2 : du 07 au 12 avril](#semaine2)  
 - [Semaine n°3 : du 15 au 20 avril](#semaine3)  
 - [Semaine n°4 : du 11 au 16 mai](#semaine4)
+- [Semaine n°5 : du 18 au 23 mai](#semaine5)
 - [Glossaire](#glossaire)
 ## Semaine n°1 : du 30 mars au 04 avril <a id="semaine1"></a>
 
@@ -86,9 +87,21 @@ Exemple n°2 : le vaisseau reste immobile s'il est déjà sur la bordure gauche 
  ## Semaine n°4 : du 11 au 16 mai <a id="semaine4"></a>
 	 Fonctionnalité n°3:Choisir la vitesse du vaisseau
 	 	story 1 :Déplacement vers la droite pour une vitesse quelconque
-	 	Prenons l'exemple d'un déplacement normal vers la droite d'un vaisseau qui irait à une vitesse de 3, et qui après son déplacement se trouverait toujours dans l'espace de jeu.
+	 	Prenons l'exemple d'un déplacement normal vers la droite d'un vaisseau qui irait à une vitesse de 3, et qui après son déplacement se trouverait toujours 
+	 	dans l'espace de jeu.
 
-![Diagrammes de classes de la semaine 1](https://github.com/GuillaumeCoulaud/image/blob/master/semaine4.png)
+![Diagrammes de classes de la semaine 4](https://github.com/GuillaumeCoulaud/image/blob/master/semaine4.png)
+
+## Semaine n°5 : du 18 au 23 mai <a id="semaine5"></a>
+	Fonctionnalité n°3:
+		story 2 :Déplacement vers la gauche pour une vitesse quelconque
+		identique à la précédente story mais déplacement vers la gauche.
+		
+	Fonctionnalié n°4:
+		refactoring sprite
+		
+![Diagrammes de classes de la semaine 5](https://github.com/GuillaumeCoulaud/image/blob/master/semaine5.gif)		
+		
 
 ## Glossaire <a id="glossaire"></a>
 
@@ -99,6 +112,7 @@ Exemple n°2 : le vaisseau reste immobile s'il est déjà sur la bordure gauche 
 
 * **Missile** :  projectile envoyé à la verticale par le vaisseau vers l'envahisseur dans le but de le détruire.
 
+* **Personnage** : Etre fictif et virtuel, contrôlé ou non par le joueur, qui apparaît dans un jeu vidéo.
 La définition des termes métiers relatifs au projet doit se trouver dans le glossaire 
 
 ------------- 
